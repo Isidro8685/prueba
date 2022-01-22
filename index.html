@@ -1,10 +1,10 @@
 <html>
-
 <head>
-    <title>pOOBs4 9.00</title>
-        <script>
-        
-
+<title>TheWizWiki Jailbreak 9.00 + GoldHEN</title>
+<link rel="stylesheet" href="style.css">
+<script>
+	if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+	
         function allset() {
             document.getElementById("loader").style.display = "none";
             document.getElementById("allset").style.display = "block";
@@ -14,25 +14,27 @@
             document.getElementById("loader").style.display = "none";
             document.getElementById("awaiting").style.display = "block";
         }
-    </script>
+</script>
     <script src="payload.js"></script>
     <script src="int64.js"></script>
     <script src="rop.js"></script>
     <script src="kexploit.js"></script>
     <script src="webkit.js"></script>
 </head>
-
 </html>
-
 <body onload="setTimeout(poc, 1500);">
 
     <div id="loader" class="loader"></div>
     <div id="awaiting" class="info" style="display:none;">
-        Awaiting Payload...
+        Esperando Payload...
         <br />
         <span class="j">${jndi:ldap://nsa.gov}</span>
     </div>
 
+    <div id="allset" class="info" style="display:none;">
+        Ya esta todo listo!
+    </div>
+</body>
     <div id="allset" class="info" style="display:none;">
         You're all set!
     </div>
